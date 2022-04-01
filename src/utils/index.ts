@@ -69,8 +69,6 @@ export const filterItems = ({ data, location, query }: filterItemsArgs) => {
       .replace(/\s+/g, "")
       .includes(location.toLowerCase().replace(/\s+/g, ""));
     if (isQueryEmpty) {
-      console.log("empty query");
-
       if (!isAllLocation) {
         if (isMatchesLocation) {
           filteredLocations.push(element);
