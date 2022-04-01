@@ -7,6 +7,7 @@ import { Navbar } from "../components/navbar";
 import { FilterForm } from "../components/filter-form";
 import { GoogleSpreadsheet } from "google-spreadsheet";
 import { generateData, filterItems, generateLocationsData } from "../utils";
+import Head from "next/head";
 
 export const getStaticProps = async () => {
   const doc = new GoogleSpreadsheet(process.env.SPREADSHEET_ID);
@@ -41,6 +42,13 @@ const Home = ({
 
   return (
     <Container maxW="container.xl" pb="10">
+      <Head>
+        <title>workspaces list sri lanka</title>
+        <meta
+          name="description"
+          content="workspaces currently available in sri lanka"
+        />
+      </Head>
       <Navbar />
       <FilterForm
         setLocation={setLocation}
