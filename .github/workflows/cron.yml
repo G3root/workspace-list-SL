@@ -1,21 +1,18 @@
-name:
-  page revalidation cron job
+name: cron-page-revalidation
 
-  # Controls when the workflow will run
 on:
-  # Triggers the workflow every hour
+  # "Scheduled workflows run on the latest commit on the default or base branch."
+  # — https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule
   schedule:
+    # (see https://crontab.guru)
     - cron: "0 * * * *"
-
-      # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "cron"
-  cron:
-    # The type of runner that the job will run on
+  remoteok:
+    env:
+      APP_URL: ${{ secrets.APP_URL }}
+      SECRET_TOKEN: ${{ secrets.SECRET_TOKEN }}
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Runs a single command using the runners shell
-      - name: revalidate page
-       run: curl '${{ secrets.APP_URL }}/api/revalidate?secret=${{ secrets.SECRET_TOKEN }}'
+      - name: cURL request
+        run: |
+          curl '${{ secrets.APP_URL }}/api/revalidate?secret=${{ secrets.SECRET_TOKEN }}'
