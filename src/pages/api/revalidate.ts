@@ -10,6 +10,8 @@ export default async function handler(
   }
 
   try {
+    console.log("successful");
+
     await res.unstable_revalidate("/");
     return res.json({ revalidated: true });
   } catch (err) {
