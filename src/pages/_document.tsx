@@ -23,7 +23,33 @@ export default class Document extends NextDocument {
             sizes="16x16"
             href="/favicon-16x16.png"
           />
-          <meta property="og:image" content="/shridhar-gupta-unsplash.jpg" />
+
+          {/* <!-- Facebook Meta Tags --> */}
+          <meta property="og:url" content="https://wfh-lk.vercel.app/" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="workspaces list sri lanka" />
+          <meta
+            property="og:description"
+            content="workspaces currently available in sri lanka"
+          />
+          <meta
+            property="og:image"
+            content="https://wfh-lk.vercel.app/shridhar-gupta-unsplash.jpg"
+          />
+
+          {/* <!-- Twitter Meta Tags --> */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta property="twitter:domain" content="wfh-lk.vercel.app" />
+          <meta property="twitter:url" content="https://wfh-lk.vercel.app/" />
+          <meta name="twitter:title" content="workspaces list sri lanka" />
+          <meta
+            name="twitter:description"
+            content="workspaces currently available in sri lanka"
+          />
+          <meta
+            name="twitter:image"
+            content="https://wfh-lk.vercel.app/shridhar-gupta-unsplash.jpg"
+          />
         </Head>
         <body>
           {/* Make Color mode to persists when you refresh the page. */}
