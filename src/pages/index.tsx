@@ -43,10 +43,10 @@ const Home = ({
   return (
     <Container maxW="container.xl" pb="10">
       <Head>
-        <title>workspaces list sri lanka</title>
+        <title>Coworking Spaces list sri lanka</title>
         <meta
           name="description"
-          content="workspaces currently available in sri lanka"
+          content="Coworking Spaces currently available in sri lanka"
         />
       </Head>
       <Navbar />
