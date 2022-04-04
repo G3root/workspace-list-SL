@@ -5,7 +5,7 @@ on:
   # — https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule
   schedule:
     # (see https://crontab.guru)
-    - cron: "0 * * * *"
+    - cron: "0 */3 * * *"
 jobs:
   remoteok:
     env:
