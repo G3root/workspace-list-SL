@@ -27,10 +27,10 @@ export default class Document extends NextDocument {
           {/* <!-- Facebook Meta Tags --> */}
           <meta property="og:url" content="https://wfh-lk.vercel.app/" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="workspaces list sri lanka" />
+          <meta property="og:title" content="Coworking spaces list sri lanka" />
           <meta
             property="og:description"
-            content="workspaces currently available in sri lanka"
+            content="Coworking spaces currently available in sri lanka"
           />
           <meta
             property="og:image"
@@ -41,10 +41,10 @@ export default class Document extends NextDocument {
           <meta name="twitter:card" content="summary_large_image" />
           <meta property="twitter:domain" content="wfh-lk.vercel.app" />
           <meta property="twitter:url" content="https://wfh-lk.vercel.app/" />
-          <meta name="twitter:title" content="workspaces list sri lanka" />
+          <meta name="twitter:title" content="Coworking spaces list sri lanka" />
           <meta
             name="twitter:description"
-            content="workspaces currently available in sri lanka"
+            content="Coworking spaces currently available in sri lanka"
           />
           <meta
             name="twitter:image"
